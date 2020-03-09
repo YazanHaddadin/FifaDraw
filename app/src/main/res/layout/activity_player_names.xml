@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerNamesActivity">
+
+    <TextView
+        android:id="@+id/tvEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="@string/enter_names"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvEnter"
+        android:layout_above="@id/nextBtn2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/playerNamesLayout"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etPlayer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="13"
+                android:hint="@string/player_1"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:textColorHighlight="@color/greenCol"/>
+
+            <EditText
+                android:id="@+id/etPlayer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_gravity="center"
+                android:ems="13"
+                android:hint="@string/player_2"
+                android:inputType="text"
+                android:textColorHighlight="@color/greenCol"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/nextBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="65dp"
+        android:text="@string/next"
+        android:ems="5"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@color/greenCol"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="65dp"
+        android:text="@string/back"
+        android:ems="5"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_red"
+        android:layout_alignParentStart="true"
+        />
+
+</RelativeLayout>

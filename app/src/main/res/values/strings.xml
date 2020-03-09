@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Fifa Draw</string>
+    <string name="app_title">FIFA Draw</string>
+    <string name="how_many_players_text">How many players?</string>
+    <string name="next">Next</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+    <string name="enter_names">Enter the player names:</string>
+    <string name="back">Back</string>
+
+    <string-array name="noOfPlayers">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
 </resources>
